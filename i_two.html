@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .border {
+            background-color: #AD88C6;
+        }
+
+
+        .top {
+            background-image: url(second.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .ep {
+            color: #FEFBF6;
+        }
+    </style>
+</head>
+
+<body class="top">
+    <form
+        style="background-color: #5F0F40; padding:20px; width:500px; height:550px; margin-left: 500px; margin-top: 80px;"
+        action="final.html">
+
+        <fieldset class="border">
+
+            <legend class="ep"> Enjoy Programming </legend>
+            <label for="text">Mobile Number :
+                <input form="number" type="number" placeholder="Mobile Number">
+            </label>
+            <br>
+            <br />
+
+            <!-- DOB -->
+
+
+            <label for="text"> DOB :
+                <input form="texT" type="date">
+            </label><br>
+            <br />
+
+            <!-- Gender -->
+
+            <label for="text">Gender:
+                <input form="text" type="radio" name="Gender"> Male
+                <input form="text" type="radio" name="Gender"> Female
+                <input form="text" type="radio" name="Gender"> Other
+            </label><br>
+            <br />
+
+            <!-- Batch Selection -->
+
+
+            <label for="text">BATCH SELECTION: <br>
+                <input form="text" type="radio" name="BATCH SELECTION">Summer <br>
+                <input form="text" type="radio" name="BATCH SELECTION"> Winter <br>
+                <input form="text" type="radio" name="BATCH SELECTION"> Rainy Season
+            </label><br>
+            <br />
+
+            <!-- Rate Yourself -->
+
+
+            <label for="Range">How do you rate your communication skills : <br>
+                <input type="range" name="range" min="0" max="10" value="5"> 0 to 10
+            </label><br>
+            <br />
+
+            <!-- Text Area -->
+
+
+            <textarea name="text" placeholder="Any query" cols="50" rows="10"></textarea>
+            <br />
+            <br />
+
+            <!-- Submit Button -->
+            <input type="submit" placeholder="submit" style="background-color:#EEEDEB ;font-size: large;">
+
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

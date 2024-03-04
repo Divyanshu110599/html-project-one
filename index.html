@@ -2,131 +2,103 @@
 <html>
 
 <head>
-    <!--title  -->
-    <title>RESUME</title>
-    
-    <!-- style -->
     <style>
-        body {
-            background-color: rgba(246, 243, 249, 0.889);
-            border-color: rgb(11, 11, 11);
-            border-style: double;
+        .border {
+            background-color: #AD88C6;
+        }
+
+        .text {
+            background-color: violet;
+        }
+
+        .ep {
+            color: #FEFBF6;
+        }
+
+        .top {
+            background-image: url(first.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
-    <!-- link -->
-    <link href="page.css" rel="stylesheet" />
 </head>
 
-<body>
-    <!-- heading -->
-    <h1 class="heading"><i><strong>Resume</strong></i></h1>
-    <hr />
-    <!-- Personal Details-->
-    <img src="assets/r_image/IMG_20240222_141116-min (1).jpg"
-        style="height: 145px; width: 135px; border-radius: 40%; float: right;">
-    <h2 class="name"><b> ➤ Divyanshu P Thakare</b></h2>
-    <h3 class="address">
-        <i> 🏡 Location: Katol, Nagpur, Maharashtra, India-441302</i><br /> <br>
-        <i>📱 Contact: 8208830672</i>
-    </h3>
-    <hr />
+<body class="top">
+    <!-- section -->
 
-    <!-- Links-->
-    <hr>
-    <div class="hyperlinktext" style="margin-right: 5px;">
-        <p> <img src="./assets/r_image/linked_in.jpeg" width="20" /> Linked In:
-            <a href="https://in.linkedin.com/in/divyanshu-thakare-2b8187228"> Divyanshu Thakare </a>
+    <form style="background-color:#5F0F40; padding:20px; width:500px; height:600px; margin-left: 450px;"
+        action="i_two.html">
 
-            <img src="./assets/r_image/github.jpeg" width="15px" /> Github Id :
-            <a href="https://github.com/Divyanshu110599/html-project-one">Divyanshu Thakare</a>
+        <fieldset class="border">
 
-            <img src="./assets/r_image/skype.jpeg" width="18" /> Skype Id :
-            <a href="https://join.skype.com/invite/tnbPlqreCs9w">Divyanshu Thakare</a>
+            <h1 style="text-align: center;">ENTER YOUR DETAILS</h1>
 
-        </p>
-    </div>
-    <hr />
-    <!-- Educational Details -->
-    <h4 class="education"><strong>Education :- 📚 </strong></h4>
+            <!-- border text -->
 
-    <hr>
+            <legend class="ep">Enjoy Programming</legend>
 
-    <h3> Branch:-</h3> <br> <i>Electrical Engineering 💡 </i>
-    <br> <br>
-    <h4>College Name :-</h4> <i> Sinhgad Institute of Technology - [SIT] Lonavala, Pune 🎓👨‍🎓</i>
-    <br> <br>
-    <table border="3">
-        <tr>
-            <th>course</th>
-            <th>institute</th>
-            <th>year</th>
-            <th>Result</th>
-        </tr>
+            <label for="text">First Name :
+                <input form="text" type="text" placeholder="First Name">
 
-        <tr>
+            </label><br>
+            <br />
+            <label for="text">Last Name :
+                <input form="text" type="text" placeholder="Last Name">
+            </label><br>
+            <br />
 
-            <td>BE in EE</td>
+            <!-- System -->
 
-            <td>Sinhgad Pune</td>
+            <!-- 1st system -->
 
-            <td>2022</td>
+            <label for="fname">
+                <h1>What laptop do you know</h1>
+            </label>
+            <input for="Laptop" type="radio" name="Laptop">
+            <label for="Laptop">Window</label><br />
 
-            <td>75%</td>
+            <input for="Laptop" type="radio" name="Laptop">
+            <label for="Laptop">Mac</label><br />
 
-        </tr>
+            <input for="Laptop" type="radio" name="Laptop">
+            <label for="Laptop">Lenovo</label><br />
+            <br />
 
-        <tr>
+            <!-- education -->
 
-            <td>Diploma</td>
-            <td>Nagpur</td>
-            <td>2018</td>
-            <td>71%</td>
+            <label for="education" id="text">
+                <h1>Select Your Education</h1>
+                <br />
+                <input for="Laptop" type="radio" name="Education">
+            </label>
+            <label for="Laptop">Jr.College</label><br />
 
-        </tr>
+            <!-- college -->
 
-    </table>
-    <br />
-    <br />
-    <hr />
+            <input for="Laptop" type="radio" name="Education">
+            <label for="Laptop">Graduation</label><br />
 
-    <!-- Skills -->
-    <h3 class="name"><b><u>SKILLS</u></b></h3>
-    <h4><u> 1.Web development</u>:</h4>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Web Disign</li>
-        <li>App Design</li>
+            <!-- graduation -->
 
-    </ul>
-    <hr />
-    <h4><u> 2.Mobile development</u>:</h4>
-    <ul>
-        <li>Web Developer</li>
-        <li>Android App Developer</li>
-        <li>Ios App Developer</li>
-    </ul>
-    <hr />
-    <h4>3.<u>Language Known </u>:</h4>
-    <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>Python</li>
-        <li>Java</li>
-    </ul>
-    <hr />
-    <h4>4.<u> Tool Use For development </u>:</h4>
-    <ul>
-        <li>Github</li>
-    </ul>
-    <hr />
-    <h4>5.<u>IDE</u>:</h4>
-    <ul>
-        <li>Visual Stdio Code</li>
-        <li>Android Studio</li>
-        <li>X Code</li>
-    </ul>
-    <hr />
+            <input for="Laptop" type="radio" name="Education">
+            <label for="Laptop">Post Graduation</label><br />
+
+            <!-- p.g -->
+
+            <input for="Laptop" type="radio" name="Education">
+            <label for="Laptop">PHD</label><br />
+            <br />
+            <br />
+
+            <!-- Submit Button -->
+
+            <input type="submit" placeholder="Submit" style="background-color:#EEEDEB ;font-size: large;">
+            <!-- . -->
+
+        </fieldset>
+
+    </form>
 
 </body>
 
