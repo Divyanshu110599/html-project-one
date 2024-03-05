@@ -3,102 +3,90 @@
 
 <head>
     <style>
-        .border {
-            background-color: #AD88C6;
-        }
+        .container {
+            height: 400px;
+            width: 200px;
+            border-style: dashed;
+            color: rgb(11, 10, 11);
+            margin-top: 10px;
+            margin-left: 10px;
+            display: block;
+            float: left;
 
-        .text {
-            background-color: violet;
-        }
 
-        .ep {
-            color: #FEFBF6;
         }
 
         .top {
-            background-image: url(first.jpg);
+            background-image: url(https://lh4.googleusercontent.com/proxy/Sq4uy2f37tYspqcZd5bpXfFSIYj65-90SWFRN04QVXoz4pa_rIAubxz_4SvAWze0-0Dmt4yF-gPk0FlAWjWEeg-OuAEtE9t_bvrz2iSsbUpMk69YApeUGu5VEzY1VRBYtzX2FkYbdXpU7vw9QSkw);
+            height: 2000px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+          padding: 300px;
         }
     </style>
 </head>
 
 <body class="top">
-    <!-- section -->
+    <!-- main section -->
 
-    <form style="background-color:#5F0F40; padding:20px; width:500px; height:600px; margin-left: 450px;"
-        action="i_two.html">
+    <!-- second main division -->
+    <div style="display: inline-block; position: fixed;">
 
-        <fieldset class="border">
 
-            <h1 style="text-align: center;">ENTER YOUR DETAILS</h1>
 
-            <!-- border text -->
+        <!-- first division -->
+        <div class="container">
 
-            <legend class="ep">Enjoy Programming</legend>
+            <img src="./assets/mahatma_g.jpeg" height="80" width="100">
+            <p>About
+                Mohandas Karamchand Gandhi was an Indian lawyer, anti-colonial nationalist and political ethicist
+                who
+                employed nonviolent resistance to lead the successful campaign for India's independence from British
+                rule. He inspired movements for civil rights and freedom across the world. Wikipedia
+                Born: 2 October 1869, Porbandar
+                Spouse: Kasturba Gandhi (m. 1883–1944)
+                Assassinated: 30 Januar
+                Grandchildren: </p>
+        </div>
 
-            <label for="text">First Name :
-                <input form="text" type="text" placeholder="First Name">
+        <!-- second division -->
 
-            </label><br>
-            <br />
-            <label for="text">Last Name :
-                <input form="text" type="text" placeholder="Last Name">
-            </label><br>
-            <br />
+        <div class="container">
 
-            <!-- System -->
+            <img src="./assets/r_image/r_t.jpeg" height="80" width="100">
 
-            <!-- 1st system -->
+            <p>About
+                Ratan Naval Tata is an Indian industrialist, philanthropist and former chairman of Tata Sons. He was
+                a
+                chairman of the Tata Group from 1990 to 2012, and interim chairman from October 2016 through
+                February
+                2017. He continues to head its charitable trusts. Wikipedia
+                Born: 28 December 1937 (age 86 years), Mumbai
+                Education: Harvard Business School (1975), MORE
+                Organizations founded:</p>
 
-            <label for="fname">
-                <h1>What laptop do you know</h1>
-            </label>
-            <input for="Laptop" type="radio" name="Laptop">
-            <label for="Laptop">Window</label><br />
 
-            <input for="Laptop" type="radio" name="Laptop">
-            <label for="Laptop">Mac</label><br />
+        </div>
 
-            <input for="Laptop" type="radio" name="Laptop">
-            <label for="Laptop">Lenovo</label><br />
-            <br />
+        <!-- third vision -->
 
-            <!-- education -->
+        <div class="container">
+            <img src="./assets/Virat_Kohli__1709552678578_1709552686672.avif" 80" width="100">
+            <p>About
+                Virat Kohli is an Indian international cricketer and the former captain of the Indian national
+                cricket team. He is a right-handed batsman and an occasional medium-fast bowler. He currently
+                represents Royal Challengers Bangalore in the IPL and Delhi in domestic cricket. Wikipedia
+                Born: 5 November 1988 (age 35 years), Delhi
+                Children: Akaay Kohli
+                Spouse: Anushka Sharma (m. 2017)
+                Siblings: Vikas Kohli, Bhawna Kohli Dhingra
+                Height: 1.75 m
+                Parents: Prem Kohli, Saroj Kohli
 
-            <label for="education" id="text">
-                <h1>Select Your Education</h1>
-                <br />
-                <input for="Laptop" type="radio" name="Education">
-            </label>
-            <label for="Laptop">Jr.College</label><br />
-
-            <!-- college -->
-
-            <input for="Laptop" type="radio" name="Education">
-            <label for="Laptop">Graduation</label><br />
-
-            <!-- graduation -->
-
-            <input for="Laptop" type="radio" name="Education">
-            <label for="Laptop">Post Graduation</label><br />
-
-            <!-- p.g -->
-
-            <input for="Laptop" type="radio" name="Education">
-            <label for="Laptop">PHD</label><br />
-            <br />
-            <br />
-
-            <!-- Submit Button -->
-
-            <input type="submit" placeholder="Submit" style="background-color:#EEEDEB ;font-size: large;">
-            <!-- . -->
-
-        </fieldset>
-
-    </form>
+            </p>
+        </div>
+    </div>
 
 </body>
 
