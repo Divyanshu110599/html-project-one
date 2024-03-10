@@ -2,91 +2,229 @@
 <html>
 
 <head>
+    <title>Chess</title>
     <style>
-        .container {
-            height: 400px;
-            width: 200px;
-            border-style: dashed;
-            color: rgb(11, 10, 11);
-            margin-top: 10px;
+        /* style to Chess-board */
+        .chess-board {
+            width: 90vw;
+            height: 50vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            margin-top: 60px;
             margin-left: 10px;
-            display: block;
-            float: left;
-
+            margin-right: 10px;
 
         }
 
-        .top {
-            background-image: url(https://lh4.googleusercontent.com/proxy/Sq4uy2f37tYspqcZd5bpXfFSIYj65-90SWFRN04QVXoz4pa_rIAubxz_4SvAWze0-0Dmt4yF-gPk0FlAWjWEeg-OuAEtE9t_bvrz2iSsbUpMk69YApeUGu5VEzY1VRBYtzX2FkYbdXpU7vw9QSkw);
-            height: 2000px;
+        /* style for white */
+
+        .w {
+            background-color: #ffffff;
+            border-color: #34444c;
+            border-style: solid;
+            width: 11.25vw;
+            height: 10vh;
+
+        }
+
+        /* style for black*/
+
+
+        .b {
+            background-color: #673314;
+            border-color: #34444c;
+            border-style: solid;
+            width: 11.25vw;
+            height: 10vh;
+
+        }
+
+        /* style for back ground image */
+        .back {
+
+            background-image: url(—Pngtree—cyan\ blue\ background\ mobile\ 4k_1986461.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            padding: 300px;
+            height: 100vh;
+            width: 100vw;
+
         }
+
+        /* image style */
+
+        .image {
+
+            width: 10vw;
+            height: 10vh;
+
+        }
+
+    
     </style>
+
+
+
 </head>
 
-<body class="top">
-    <!-- main section -->
 
-    <!-- second main division -->
-    <div style="display: inline-block; position: fixed;">
+<body class="back">
+                         <h1 style="color: rgb(1, 0, 0);"><strong>Let's Play Chess :- ♟️</strong></h1>
+    <!-- Main Container -->
 
+    <div class="chess-board">
 
-
-        <!-- first division -->
-        <div class="container">
-
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQApqZrVpANH7vUVyC2mi6uQBnTSi5KZQb3xlcCHbzjGA&s" height="80" width="100">
-            <p>About
-                Mohandas Karamchand Gandhi was an Indian lawyer, anti-colonial nationalist and political ethicist
-                who
-                employed nonviolent resistance to lead the successful campaign for India's independence from British
-                rule. He inspired movements for civil rights and freedom across the world. Wikipedia
-                Born: 2 October 1869, Porbandar
-                Spouse: Kasturba Gandhi (m. 1883–1944)
-                Assassinated: 30 Januar
-                Grandchildren: </p>
+        <!-- First row -->
+        <div class="w">
+            <img class="image" src="./chess/DarkRook.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/darkknight.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/darkbishop.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/king.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/queen.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/darkbishop.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/darkknight.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/DarkRook.png">
         </div>
 
-        <!-- second division -->
+        <!-- two row -->
 
-        <div class="container">
+        <div class="b">
+            <img class="image" src="./chess/darkpawn.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/darkpawn.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/darkpawn.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/darkpawn.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/darkpawn.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/darkpawn.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/darkpawn.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/darkpawn.png">
+        </div>
+        <!-- three row -->
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/35._ISC-Symposium-Ratan_N._Tata_in_der_Pause-HSGN_028-01812.JPG"
-                height="80" width="100">
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
 
-            <p>About
-                Ratan Naval Tata is an Indian industrialist, philanthropist and former chairman of Tata Sons. He was
-                a
-                chairman of the Tata Group from 1990 to 2012, and interim chairman from October 2016 through
-                February
-                2017. He continues to head its charitable trusts. Wikipedia
-                Born: 28 December 1937 (age 86 years), Mumbai
-                Education: Harvard Business School (1975), MORE
-                Organizations founded:</p>
+        <!-- Four row -->
 
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
 
+        <!-- five row -->
+
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+
+        <!-- six row -->
+
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+        <div class="b"></div>
+        <div class="w"></div>
+
+        <!-- seven row -->
+
+        <div class="w">
+            <img class="image" src="./chess/LightPawn (1).png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/LightPawn (1).png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/LightPawn (1).png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/LightPawn (1).png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/LightPawn (1).png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/LightPawn (1).png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/LightPawn (1).png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/LightPawn (1).png">
         </div>
 
-        <!-- third vision -->
+        <!-- eight row -->
 
-        <div class="container">
-            <img src="https://wallpapercave.com/wp/wp6105847.jpg" height="80" width="100">
-            <p>About
-                Virat Kohli is an Indian international cricketer and the former captain of the Indian national
-                cricket team. He is a right-handed batsman and an occasional medium-fast bowler. He currently
-                represents Royal Challengers Bangalore in the IPL and Delhi in domestic cricket. Wikipedia
-                Born: 5 November 1988 (age 35 years), Delhi
-                Children: Akaay Kohli
-                Spouse: Anushka Sharma (m. 2017)
-                Siblings: Vikas Kohli, Bhawna Kohli Dhingra
-                Height: 1.75 m
-                Parents: Prem Kohli, Saroj Kohli
-
-            </p>
+        <div class="b">
+            <img class="image" src="./chess/lightrook.png">
         </div>
+        <div class="w">
+            <img class="image" src="./chess/lightknight.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/lightbishop.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/LightKing.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/LightQueen.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/lightbishop.png">
+        </div>
+        <div class="b">
+            <img class="image" src="./chess/lightknight.png">
+        </div>
+        <div class="w">
+            <img class="image" src="./chess/lightrook.png">
+        </div>
+
     </div>
 
 </body>
