@@ -2,230 +2,63 @@
 <html>
 
 <head>
-    <title>Chess</title>
-    <style>
-        /* style to Chess-board */
-        .chess-board {
-            width: 90vw;
-            height: 50vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            margin-top: 60px;
-            margin-left: 10px;
-            margin-right: 10px;
-
-        }
-
-        /* style for white */
-
-        .w {
-            background-color: #ffffff;
-            border-color: #34444c;
-            border-style: solid;
-            width: 11.25vw;
-            height: 10vh;
-
-        }
-
-        /* style for black*/
-
-
-        .b {
-            background-color: #673314;
-            border-color: #34444c;
-            border-style: solid;
-            width: 11.25vw;
-            height: 10vh;
-
-        }
-
-        /* style for back ground image */
-        .back {
-
-            background-image: url(—Pngtree—cyan\ blue\ background\ mobile\ 4k_1986461.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-            width: 100vw;
-
-        }
-
-        /* image style */
-
-        .image {
-
-            width: 10vw;
-            height: 10vh;
-
-        }
-
-    
-    </style>
-
-
+    <!-- linking -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
+<body>
 
-<body class="back">
-                         <h1 style="color: rgb(1, 0, 0);"><strong>Let's Play Chess :- ♟️</strong></h1>
-    <!-- Main Container -->
+    <!-- back_ground_image -->
 
-    <div class="chess-board">
+    <body class="back">
 
-        <!-- First row -->
-        <div class="w">
-            <img class="image" src="DarkRook.png">
-        </div>
-        <div class="b">
-            <img class="image" src="darkknight.png">
-        </div>
-        <div class="w">
-            <img class="image" src="darkbishop.png">
-        </div>
-        <div class="b">
-            <img class="image" src="king.png">
-        </div>
-        <div class="w">
-            <img class="image" src="queen.png">
-        </div>
-        <div class="b">
-            <img class="image" src="darkbishop.png">
-        </div>
-        <div class="w">
-            <img class="image" src="darkknight.png">
-        </div>
-        <div class="b">
-            <img class="image" src="DarkRook.png">
-        </div>
+        <!-- main container -->
 
-        <!-- two row -->
+        <div class="main">
 
-        <div class="b">
-            <img class="image" src="darkpawn.png">
-        </div>
-        <div class="w">
-            <img class="image" src="darkpawn.png">
-        </div>
-        <div class="b">
-            <img class="image" src="darkpawn.png">
-        </div>
-        <div class="w">
-            <img class="image" src="darkpawn.png">
-        </div>
-        <div class="b">
-            <img class="image" src="darkpawn.png">
-        </div>
-        <div class="w">
-            <img class="image" src="darkpawn.png">
-        </div>
-        <div class="b">
-            <img class="image" src="darkpawn.png">
-        </div>
-        <div class="w">
-            <img class="image" src="darkpawn.png">
-        </div>
-        <!-- three row -->
+            <!-- display -->
 
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
+            <div class="one">
 
-        <!-- Four row -->
+                <h1 id="display"></h1>
 
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
+            </div>
 
-        <!-- five row -->
+            <div class="two">
 
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
+                <div class="mid">
 
-        <!-- six row -->
+                    <div><button class="Ac" onclick="clearFunction()">Ac</button></div>
+                    <div><button class="div" onclick="divi()">/</button></div>
+                    <div><button class="div">%</button></div>
+                    <div><button class="clear" onclick="backspace()"> <--- </button></div>
+                    <div><button class="number" onclick="numberType(7)">7</button></div>
+                    <div><button class="number" onclick="numberType(8)">8</button></div>
+                    <div><button class="number" onclick="numberType(9)">9</button></div>
+                    <div><button class="div" onclick="mul()">X</button></div>
+                    <div><button class="number" onclick="numberType(4)">4</button></div>
+                    <div><button class="number" onclick="numberType(5)">5</button></div>
+                    <div><button class="number" onclick="numberType(6)">6</button></div>
+                    <div><button class="div" onclick="minus()">-</button></div>
+                    <div><button class="number" onclick="numberType(1)">1</button></div>
+                    <div><button class="number" onclick="numberType(2)">2</button></div>
+                    <div><button class="number" onclick="numberType(3)">3</button></div>
+                    <div><button class="div" onclick="add()">+</button></div>
+                </div>
+                <!-- bottom -->
+                <div class="bottom">
+                    <div><button class="number" onclick="numberType(0)">0</button></div>
+                    <div><button class="point">.</button></div>
+                    <div><button class="equal_to" onclick="showresult()">= </button></div>
+                </div>
 
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
-        <div class="b"></div>
-        <div class="w"></div>
+            </div>
 
-        <!-- seven row -->
+        </div>
+    </body>
 
-        <div class="w">
-            <img class="image" src="LightPawn (1).png">
-        </div>
-        <div class="b">
-            <img class="image" src="LightPawn (1).png">
-        </div>
-        <div class="w">
-            <img class="image" src="LightPawn (1).png">
-        </div>
-        <div class="b">
-            <img class="image" src="LightPawn (1).png">
-        </div>
-        <div class="w">
-            <img class="image" src="LightPawn (1).png">
-        </div>
-        <div class="b">
-            <img class="image" src="LightPawn (1).png">
-        </div>
-        <div class="w">
-            <img class="image" src="LightPawn (1).png">
-        </div>
-        <div class="b">
-            <img class="image" src="LightPawn (1).png">
-        </div>
-
-        <!-- eight row -->
-
-        <div class="b">
-            <img class="image" src="lightrook.png">
-        </div>
-        <div class="w">
-            <img class="image" src="lightknight.png">
-        </div>
-        <div class="b">
-            <img class="image" src="lightbishop.png">
-        </div>
-        <div class="w">
-            <img class="image" src="LightKing.png">
-        </div>
-        <div class="b">
-            <img class="image" src="LightQueen.png">
-        </div>
-        <div class="w">
-            <img class="image" src="lightbishop.png">
-        </div>
-        <div class="b">
-            <img class="image" src="lightknight.png">
-        </div>
-        <div class="w">
-            <img class="image" src="lightrook.png">
-        </div>
-
-    </div>
+</html>
 
 </body>
 
